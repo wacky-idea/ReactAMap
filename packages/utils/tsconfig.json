@@ -5,11 +5,7 @@
     "types": [
       "node"
     ],
-    "paths": {
-      "@react-amap/*": [
-        "../*"
-      ]
-    },
+    "paths": {},
   },
   "include": [
     "./lib/**/*",

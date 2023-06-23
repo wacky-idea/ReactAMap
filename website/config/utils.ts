@@ -2,7 +2,7 @@ import { existsSync, readdirSync, readFileSync } from "fs"
 import { resolve, sep } from "path"
 
 const env = process.env.API_ENV || ''
-const packageName = '@react-amap'
+const packageName = '@wacky-idea'
 const tempPackagesPath = resolve(__dirname, `../../packages`)
 const tempNodeModulesPath = resolve(__dirname, `../../node_modules/${packageName}/`)
 
@@ -47,7 +47,7 @@ export function getPackagesMapping(_env = env): PackagesMapping {
       list.forEach(m => {
         const packageConfig = resolve(packagesPath, m, 'package.json')
         if (existsSync(packageConfig)) {
-          const { typings, main, module } = JSON.parse(readFileSync(packageConfig).toString())
+          const { typings, main, module, name } = JSON.parse(readFileSync(packageConfig).toString())
           let entry = "src/index.ts"
           if (!!typings && existsSync(resolve(packagesPath, m, typings))) {
             entry = typings
@@ -58,10 +58,8 @@ export function getPackagesMapping(_env = env): PackagesMapping {
           if (module && existsSync(resolve(packagesPath, m, module))) {
             entry = module
           }
-          // result[join(packageName, m)] = resolve(packagesPath, m, entry)
-          // result[`${resolve(packageName, m)}${sep}`] = `${resolve(packagesPath, m)}${sep}`
-          result[`${packageName}/${m}`] = resolve(packagesPath, m, entry)
-          result[`${packageName}/${m}/`] = `${resolve(packagesPath, m)}${sep}`
+          result[`${name}`] = resolve(packagesPath, m, entry)
+          result[`${name}/`] = `${resolve(packagesPath, m)}${sep}`
         }
       })
       return result
