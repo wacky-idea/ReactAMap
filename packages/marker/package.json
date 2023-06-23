@@ -1,6 +1,6 @@
 {
   "name": "@wacky-idea/react-amap-marker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "aomd <g00665@163.com>",
   "homepage": "",
@@ -24,8 +24,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@wacky-idea/react-amap-map": "^1.0.0",
-    "@wacky-idea/react-amap-types": "^1.0.0",
+    "@wacky-idea/react-amap-map": "^1.0.1",
+    "@wacky-idea/react-amap-types": "^1.0.1",
     "react": ">=17.x.x",
     "react-dom": ">=17.x.x"
   },
