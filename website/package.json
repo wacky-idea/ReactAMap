@@ -1,0 +1,56 @@
+{
+  "private": true,
+  "name": "website",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "aomd <g00665@163.com>",
+  "scripts": {
+    "start": "cross-env API_ENV=dev umi dev",
+    "build": "cross-env API_ENV=prod umi build"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.5.0",
+    "@wacky-idea/react-amap-info-window": "^1.0.0",
+    "@wacky-idea/react-amap-loader": "^1.0.0",
+    "@wacky-idea/react-amap-map": "^1.0.0",
+    "@wacky-idea/react-amap-marker": "^1.0.0",
+    "@wacky-idea/react-amap-point-simplifier": "^1.0.0",
+    "@wacky-idea/react-amap-types": "^1.0.0",
+    "antd": "^4.21.5",
+    "aomd-ua": "^0.0.2",
+    "aomd-utils": "0.0.23",
+    "axios": "^0.27.2",
+    "js-cookie": "^3.0.1",
+    "mobx": "^6.8.0",
+    "mobx-react-lite": "^3.4.0",
+    "normalize.css": "^8.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-use": "^17.4.0",
+    "umi": "^3.5.26"
+  },
+  "devDependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@types/js-cookie": "^3.0.2",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@umijs/plugin-helmet": "^1.1.4",
+    "@umijs/test": "^3.5.26",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}

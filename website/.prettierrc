@@ -1,0 +1,23 @@
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ],
+  "printWidth": 160,
+  "proseWrap": "preserve",
+  "rangeStart": 0,
+  "requirePragma": false,
+  "semi": false,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "useTabs": false
+}

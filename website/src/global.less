@@ -1,0 +1,48 @@
+:root {
+  // 兼容写法 在全面屏下提供自适应的边距调整
+  --sat: constant(safe-area-inset-top);
+  --sat: env(safe-area-inset-top);
+
+  // 兼容写法 在全面屏下提供自适应的边距调整
+  --sar: constant(safe-area-inset-right);
+  --sar: env(safe-area-inset-right);
+
+  // 兼容写法 在全面屏下提供自适应的边距调整
+  --sab: constant(safe-area-inset-bottom);
+  --sab: env(safe-area-inset-bottom);
+
+  // 兼容写法 在全面屏下提供自适应的边距调整
+  --sal: constant(safe-area-inset-left);
+  --sal: env(safe-area-inset-left);
+}
+
+:root,
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  // 设置字体
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+image,
+canvas {
+  display: block;
+}
+
+/** 设置元素是否对指针事件做出反应 */
+.pointer-events-none {
+  pointer-events: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

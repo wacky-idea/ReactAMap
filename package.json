@@ -1,0 +1,25 @@
+{
+  "name": "react-amap",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "aomd <g00665@163.com>",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/**",
+    "website"
+  ],
+  "scripts": {
+    "publish": "lerna publish --no-private --conventional-commits -y",
+    "clean": "lerna clean",
+    "build": "lerna run build --no-private",
+    "test": "lerna run test"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^7.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}

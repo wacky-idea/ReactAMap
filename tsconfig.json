@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "jsx": "react",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "importHelpers": false,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "./website"
+  ]
+}

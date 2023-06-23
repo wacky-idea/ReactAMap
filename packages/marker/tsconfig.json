@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "types": [
+      "node"
+    ],
+    "paths": {},
+  },
+  "include": [
+    "./lib/**/*",
+  ],
+  "exclude": [
+    "./node_modules/**/*",
+    "**/__test__",
+  ]
+}

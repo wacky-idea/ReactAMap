@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@react-amap/*": [
+        "../*"
+      ]
+    },
+  },
+  "include": [
+    "./lib/**/*",
+  ],
+  "exclude": [
+    "./node_modules/**/*",
+    "**/__test__",
+  ]
+}
