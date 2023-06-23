@@ -21,7 +21,7 @@ export default function app() {
         AMapUIVersion="1.1"
         AMapUIPlugins={["misc/PointSimplifier"]}
       >
-        <Map style={{ width: "100%", height: "100%" }}>
+        <Map style={{ width: "100%", height: "300px" }}>
         </Map>
       </Loader>
     </>

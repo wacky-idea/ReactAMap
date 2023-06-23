@@ -23,7 +23,7 @@ export default function app() {
         AMapUIVersion="1.1"
         AMapUIPlugins={["misc/PointSimplifier"]}
       >
-        <Map style={{ width: "100%", height: "100%" }} center={[114.304145, 30.593569]}>
+        <Map style={{ width: "100%", height: "300px" }} center={[114.304145, 30.593569]}>
           <Marker position={[114.304145, 30.593569]} icon={"//vdata.amap.com/icons/b18/1/2.png"} />
         </Map>
       </Loader>
